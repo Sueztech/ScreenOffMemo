@@ -471,7 +471,7 @@ public class MemoActivity extends AppCompatActivity
 
             saveFilePath = filePath.getPath() + '/';
 
-            fileName = "ActionMemo_" + new SimpleDateFormat("yyyyMMdd_HHmmss", Locale.US)
+            fileName = "Action memo" + new SimpleDateFormat("yyyyMMdd_HHmmss", Locale.US)
                     .format(new Date(System.currentTimeMillis())) + ".spd";
             saveFilePath += fileName;
 

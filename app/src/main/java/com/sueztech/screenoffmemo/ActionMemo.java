@@ -8,15 +8,15 @@ import java.util.Locale;
 
 class ActionMemo {
 
-    private static final SimpleDateFormat dateParser = new SimpleDateFormat("yyyyMMdd_HHmmss", Locale.US);
-
-    private Date date;
+    private static final SimpleDateFormat dateParser
+            = new SimpleDateFormat("yyyyMMdd_HHmmss", Locale.US);
     private final String name;
+    private Date date;
 
     ActionMemo(File f) {
         name = f.getName();
         try {
-            date = dateParser.parse(name.replace("ActionMemo_", "").replace(".spd", ""));
+            date = dateParser.parse(name.substring(11).replace(".spd", ""));
         } catch (ParseException e) {
             date = null;
             e.printStackTrace();
@@ -25,6 +25,10 @@ class ActionMemo {
 
     String getName() {
         return name;
+    }
+
+    Date getDate() {
+        return date;
     }
 
     @Override

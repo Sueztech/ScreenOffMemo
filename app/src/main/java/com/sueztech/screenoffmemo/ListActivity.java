@@ -13,6 +13,8 @@ import android.widget.ListView;
 
 import java.io.File;
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 
 import static android.content.Intent.ACTION_VIEW;
 
@@ -37,6 +39,13 @@ public class ListActivity extends AppCompatActivity implements AdapterView.OnIte
                 actionMemos.add(new ActionMemo(f));
             }
         }
+
+        Collections.sort(actionMemos, new Comparator<ActionMemo>() {
+            @Override
+            public int compare(ActionMemo actionMemo, ActionMemo t1) {
+                return actionMemo.getDate().compareTo(t1.getDate());
+            }
+        });
 
         ArrayAdapter<ActionMemo> mAdapter = new ArrayAdapter<>(this,
                 android.R.layout.simple_list_item_1, actionMemos);
