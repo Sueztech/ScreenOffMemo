@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Screen Off Memo</string>
+    <string name="title_activity_list">Saved Memos</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="description" translatable="false">Image Description</string>
+
+    <string name="err_unexpected">An unexpected error occurred</string>
+
+    <string name="err_not_supported">This device does not support the S Pen.</string>
+    <string name="err_no_library">You need to install additional S Pen software to use this application. Install?</string>
+    <string name="err_update_required">The installed S Pen library needs to be updated. Install?</string>
+    <string name="err_update_recommended">A newer version of the S Pen library is available. Install?</string>
+
+    <string name="err_start_spen">Could not initialize the S Pen.</string>
+    <string name="err_start_notedoc">Could not initialize the note.</string>
+    <string name="err_limited_support">This device does not support the S Pen. You can draw with your finger.</string>
+
+    <string name="err_could_not_open">Could not open the file</string>
+    <string name="err_file_not_supported">This file is not supported</string>
+    <string name="err_password_locked">This file is locked by a password</string>
+    <string name="err_version_unsupported">This file version is unsupported</string>
+
+    <string name="err_permission_denied">Permissions denied! You will not be able to save your work!</string>
+    <string name="err_creating_dir">Could not create save directory!</string>
+
+    <string name="root_yes">Root is available!</string>
+    <string name="root_no">Root is NOT available!</string>
+
+    <string name="help_text">Turn off your phone, and pull out the S Pen!</string>
+    <string name="additional_help_text">You may need the following app, to detect S Pen events on custom ROMs.</string>
+    <string name="install_addon_button">CM S Pen Add-on (ROOT)</string>
+
+    <string name="help_text_root">Click the following button to request root access.</string>
+    <string name="additional_help_text_root">This is used to turn off the screen, without interfering with Smart Lock.</string>
+    <string name="root_check_button">Check Root</string>
+
+    <string name="view_files_button">View Saved Memos</string>
+
+</resources>

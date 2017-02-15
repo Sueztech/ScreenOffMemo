@@ -1,0 +1,99 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true"
+    android:orientation="vertical"
+    tools:context="com.sueztech.screenoffmemo.MemoActivity">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:padding="4.0dip">
+
+        <ImageView
+            android:id="@+id/penBtn"
+            android:layout_width="@dimen/tool_size"
+            android:layout_height="@dimen/tool_size"
+            android:background="@drawable/selector_tool_bg"
+            android:contentDescription="@string/description"
+            android:padding="@dimen/tool_padding"
+            android:src="@drawable/selector_pen" />
+
+        <ImageView
+            android:id="@+id/eraserBtn"
+            android:layout_width="@dimen/tool_size"
+            android:layout_height="@dimen/tool_size"
+            android:background="@drawable/selector_tool_bg"
+            android:contentDescription="@string/description"
+            android:padding="@dimen/tool_padding"
+            android:src="@drawable/selector_eraser" />
+
+        <View
+            android:layout_width="0.0dip"
+            android:layout_height="1.0dip"
+            android:layout_weight="1.0" />
+
+        <ImageView
+            android:id="@+id/undoBtn"
+            android:layout_width="@dimen/tool_size"
+            android:layout_height="@dimen/tool_size"
+            android:contentDescription="@string/description"
+            android:padding="@dimen/tool_padding"
+            android:src="@drawable/selector_undo"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/redoBtn"
+            android:layout_width="@dimen/tool_size"
+            android:layout_height="@dimen/tool_size"
+            android:contentDescription="@string/description"
+            android:padding="@dimen/tool_padding"
+            android:src="@drawable/selector_redo"
+            android:visibility="gone" />
+
+        <ProgressBar
+            android:id="@+id/loading"
+            android:layout_width="@dimen/tool_size"
+            android:layout_height="@dimen/tool_size"
+            android:indeterminate="true" />
+
+        <View
+            android:layout_width="0.0dip"
+            android:layout_height="1.0dip"
+            android:layout_weight="1.0" />
+
+        <ImageView
+            android:id="@+id/saveBtn"
+            android:layout_width="@dimen/tool_size"
+            android:layout_height="@dimen/tool_size"
+            android:contentDescription="@string/description"
+            android:padding="@dimen/tool_padding"
+            android:src="@drawable/ic_check_circle_white_48dp" />
+
+        <ImageView
+            android:id="@+id/closeBtn"
+            android:layout_width="@dimen/tool_size"
+            android:layout_height="@dimen/tool_size"
+            android:contentDescription="@string/description"
+            android:padding="@dimen/tool_padding"
+            android:src="@drawable/ic_close_white_48dp" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/spenViewContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:id="@+id/spenViewLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,19 @@
+Screen Off Memo
+By Kevin Abraham
+
+Changelog:
+
+v1.2.1:
+- Fixed crash when trying to open .spd files from CM File Manager (and possibly others)
+
+v1.2.0:
+- Added button to open Action Memos from within the app
+
+v1.1.0:
+- If the app was launched by removing the S Pen and root is available, the screen turns off automatically when the S Pen is re-inserted
+
+v1.0:
+- Initial release
+
+v0.9:
+- Beta release
